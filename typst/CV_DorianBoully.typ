@@ -28,7 +28,7 @@
   date: "depuis 2020",
   title: "École Polytechnique",
   org: "Parcours d'approfondissement en mathématiques",
-)[
+)[\
   Projets avec mémoire :
   - Calcul de Malliavin. Supervision : Anne-Sophie de Suzzoni ;
   - Représentations de groupes et équation de Dirac. Supervision : A-S. de Suzzoni et S. Munier ;
@@ -47,7 +47,7 @@
 #cv-section("Expériences professionnelles et stages")
 
 #cv-entry(
-  date: "février 2026 –",
+  date: "depuis février 2026",
   title: "Stage de recherche M2",
   org: "IMJ-PRG",
 )[
@@ -108,14 +108,14 @@
   column-gutter: 1.5em,
   [
     #cv-section("Langues")
-
-    - *Français :* langue maternelle
-    - *Anglais :* C1 certifié TOEFL
-    - *Espagnol :* B2 certifié DELE
+    / Français: langue maternelle
+    / Anglais: C1 certifié TOEFL
+    / Espagnol: B2 certifié DELE
   ],
   [
     #cv-section("Centres d'intérêt")
-
-    #cv-item(label: "Sport")[Badminton (niveau national).]
+    / Sport: Badminton (niveau national)
+    / Informatique: Linux, Neovim, Typst
+    / Voyages: Argentine, Chili, Pérou, Indonésie, ...
   ],
 )

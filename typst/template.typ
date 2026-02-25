@@ -2,6 +2,8 @@
 
 #let burgundy = rgb(139, 0, 0)
 #let rule-weight = 0.6pt
+#let body-size = 11pt
+#let dates-size = 10pt
 
 // ── Public helpers ────────────────────────────────────────────────────────────
 
@@ -17,16 +19,15 @@
   grid(
     columns: (3.5cm, 1fr),
     column-gutter: 0.6em,
-    align(right, text(size: 9pt, fill: rgb(100,100,100), date)),
+    align(right, text(size: dates-size, fill: rgb(100,100,100), date)),
     {
       let header-parts = (strong(title),)
       if org != "" { header-parts.push(org) }
       if location != "" { header-parts.push(location) }
       if grade != "" { header-parts.push(grade) }
-      text(size: 10pt, header-parts.join(", "))
+      text(size: body-size, header-parts.join(", "))
       if body != [] {
-        v(0.15em)
-        text(size: 9.5pt, body)
+        text(size: body-size, body)
       }
     },
   )
@@ -38,18 +39,16 @@
   grid(
     columns: (3.5cm, 1fr),
     column-gutter: 0.6em,
-    align(right, text(size: 9pt, fill: rgb(100,100,100), label)),
-    text(size: 9.5pt, body),
+    align(right, text(size: dates-size, fill: rgb(100,100,100), label)),
+    text(size: body-size, body),
   )
-  v(0.2em)
 }
 
 // A top-level section heading
 #let cv-section(title) = {
-  v(0.4em)
   text(size: 13pt, fill: burgundy, weight: "bold", title)
+  v(-.5em)
   line(length: 100%, stroke: rule-weight + burgundy)
-  v(0.15em)
 }
 
 // ── Document template ─────────────────────────────────────────────────────────
@@ -68,7 +67,7 @@
     paper: "a4",
     margin: (x: 1.8cm, y: 1.5cm),
   )
-  set text(font: "Latin Modern Roman", size: 10pt, lang: "fr")
+  set text(size: body-size, lang: "fr")
   set par(justify: true, leading: 0.55em)
 
   // ── Header ──────────────────────────────────────────────────────────────────
@@ -81,7 +80,7 @@
     ),
     // Contact info (right)
     align(right,
-      text(size: 9pt,
+      text(size: dates-size,
         stack(
           dir: ttb,
           spacing: 0.35em,
@@ -94,11 +93,11 @@
     ),
   )
 
-  line(length: 100%, stroke: 0.8pt + burgundy)
-  v(0.2em)
+  // line(length: 100%, stroke: 0.8pt + burgundy)
+  v(1.2em)
 
   if subtitle != "" {
-    align(center, text(size: 10.5pt, style: "italic", subtitle))
+    align(center, text(size: 13pt, style: "italic", subtitle))
     v(0.5em)
   }
 
