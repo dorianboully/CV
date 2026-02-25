@@ -20,8 +20,8 @@
 )[
   - En cours : Convergence de spectres, Classes caractéristiques ;
   - Cours validés : Surfaces de Riemann, Topologie algébrique des variétés, Algèbre homologique, Schémas ;
-  - Exposé au séminaire $infinity$-catégories sur les (co)limites ;
   - Exposé au groupe de travail Géométrie hyperkählérienne sur la conjecture de Calabi.
+  - Exposé au séminaire $infinity$-catégories sur les (co)limites ;
 ]
 
 #cv-entry(
