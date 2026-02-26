@@ -89,7 +89,7 @@
           if address != "" { address } else { none },
           if phone != "" { phone } else { none },
           if email != "" { link("mailto:" + email, email) } else { none },
-          if webpage != "" { link(webpage, "Page perso (notes des projets disponibles)") } else { none },
+          if webpage != "" { link("https://" + webpage, webpage) } else { none },
         )
       )
     ),
