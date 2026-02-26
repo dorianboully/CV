@@ -6,6 +6,7 @@
   address: "50 Rue de la Goutte d'Or, 75018, Paris, France",
   phone: "(+33)6 41 68 08 93",
   email: "dorian.boully@polytechnique.edu",
+  webpage: "https://dorianboully.github.io/",
   subtitle: [École Polytechnique (4#super[e] année) — M2 Mathématiques fondamentales IMJ-PRG],
 )
 
