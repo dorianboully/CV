@@ -59,6 +59,7 @@
   address: "",
   phone: "",
   email: "",
+  webpage: "",
   subtitle: "",
   body,
 ) = {
@@ -88,6 +89,7 @@
           if address != "" { address } else { none },
           if phone != "" { phone } else { none },
           if email != "" { link("mailto:" + email, email) } else { none },
+          if webpage != "" { link(webpage, "Page perso (notes des projets disponibles)") } else { none },
         )
       )
     ),
