@@ -101,16 +101,21 @@
   de Nalini Anantharaman au Collège de France.
 ]
 
-// ── Langues ───────────────────────────────────────────────────────────────────
+// ── Langues & Centres d'intérêt (deux colonnes) ───────────────────────────────
 
-#cv-section("Langues")
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 1.5em,
+  [
+    #cv-section("Langues")
 
-- *Français :* langue maternelle
-- *Anglais :* C1 certifié TOEFL
-- *Espagnol :* B2 certifié DELE
+    - *Français :* langue maternelle
+    - *Anglais :* C1 certifié TOEFL
+    - *Espagnol :* B2 certifié DELE
+  ],
+  [
+    #cv-section("Centres d'intérêt")
 
-// ── Centres d'intérêt ──────────────────────────────────────────────────────────
-
-#cv-section("Centres d'intérêt")
-
-#cv-item(label: "Sport")[Badminton (niveau national).]
+    #cv-item(label: "Sport")[Badminton (niveau national).]
+  ],
+)

@@ -30,7 +30,7 @@
       }
     },
   )
-  v(0.35em)
+  v(0.2em)
 }
 
 // A short labelled item (label | description)
@@ -41,15 +41,15 @@
     align(right, text(size: 9pt, fill: rgb(100,100,100), label)),
     text(size: 9.5pt, body),
   )
-  v(0.35em)
+  v(0.2em)
 }
 
 // A top-level section heading
 #let cv-section(title) = {
-  v(0.6em)
+  v(0.4em)
   text(size: 13pt, fill: burgundy, weight: "bold", title)
   line(length: 100%, stroke: rule-weight + burgundy)
-  v(0.3em)
+  v(0.15em)
 }
 
 // ── Document template ─────────────────────────────────────────────────────────
@@ -77,10 +77,7 @@
     column-gutter: 1em,
     // Name (left)
     align(bottom,
-      text(size: 24pt, weight: "bold", fill: burgundy,
-        name.split(" ").at(0) + " " +
-        text(fill: black, name.split(" ").slice(1).join(" "))
-      )
+      text(size: 24pt, weight: "bold", fill: black, name)
     ),
     // Contact info (right)
     align(right,
@@ -102,7 +99,7 @@
 
   if subtitle != "" {
     align(center, text(size: 10.5pt, style: "italic", subtitle))
-    v(0.8em)
+    v(0.5em)
   }
 
   // ── Body ────────────────────────────────────────────────────────────────────
