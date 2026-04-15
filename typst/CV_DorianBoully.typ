@@ -19,8 +19,9 @@
   title: "M2 Mathématiques fondamentales",
   org: "IMJ-PRG",
 )[
-  - En cours : Convergence de spectres, Classes caractéristiques ;
-  - Cours validés : Surfaces de Riemann, Topologie algébrique des variétés, Algèbre homologique, Schémas ;
+  - Cours validés : Surfaces de Riemann, Topologie algébrique des variétés,
+    Convergences de spectres, Classes caractéristiques, Algèbre homologique,
+    Schémas ;
   - Exposé au groupe de travail Géométrie hyperkählérienne sur la conjecture de Calabi.
   - Exposé au séminaire $infinity$-catégories sur les (co)limites ;
 ]
